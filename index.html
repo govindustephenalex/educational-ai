@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduChat AI</title>
+    <link rel="stylesheet" href="frontend/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i> EduChat AI
+            </div>
+            <button class="new-chat-btn"><i class="fa-solid fa-plus"></i> New Chat</button>
+
+            <div class="history">
+                <h3>History</h3>
+                <div class="history-item active">Physics: Laws of Motion</div>
+                <div class="history-item">Math: Calculus Basics</div>
+                <div class="history-item">Bio: Photosynthesis</div>
+            </div>
+
+            <div class="user-profile">
+                <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                <span>Student</span>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+            <div class="chat-header">
+                <div class="model-selector">
+                    <span class="active">Edu-Genius v1</span>
+                </div>
+            </div>
+
+            <div class="messages-container" id="messages-container">
+                <div class="message bot-message">
+                    <div class="avatar-icon"><i class="fa-solid fa-robot"></i></div>
+                    <div class="content">
+                        Hello! I'm your personal AI Tutor. I can help you with School subjects, Engineering topics, or
+                        Competitive exams. What would you like to learn today?
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <div class="input-box">
+                    <textarea id="user-input"
+                        placeholder="Ask a question (e.g., 'Explain Thermodynamics for Class 11')..."
+                        rows="1"></textarea>
+                    <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+                <div class="disclaimer">AI can make mistakes. Check important info.</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="frontend/script.js"></script>
+</body>
+
+</html>
